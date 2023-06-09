@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(44, 40, 40);
+    text-decoration: none;
+    list-style: none;
+  
+}
+
+/*menu*/
+.header{
+    background: #2b2826;
+    height: 100px;
+}
+.menu{
+    background: #2b2826;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+  font-size: 25px;
+    font-weight: 800; 
+}
+.menu .navbar ul li {
+    background: #2b2826;
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    background: #2b2826;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover {
+    color: #8475a1;
+    background: #2b2826;
+    
+}
+#menu{
+    display: none;
+    background: #2b2826;
+    
+}
+.menu-icono{
+    background: #2b2826;
+    width: 25px;
+}
+.menu label{
+    background: #2b2826; 
+cursor: pointer;
+display: none;
+}
+
+
+.datop{
+    width: 800px;
+    background-color: rgb(13, 47, 66);
+    padding: 30px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+}
+.datop h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 47, 66);
+}
+.con{
+    width: 100%;
+    background: rgb(13, 47, 66);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(206, 206, 206);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.gen{
+    color: white;
+    font-size: 20px;
+    background-color: rgb(13, 47, 66);
+}
+.sem{
+    color: white;
+    font-size: 20px;
+}
+.bo{
+    
+    width: 70%;
+    background: rgb(13, 47, 66);
+    border: none;
+    padding: 10;
+    color: fff;
+    margin: 15px 0;
+    font-size: 20px;
+}

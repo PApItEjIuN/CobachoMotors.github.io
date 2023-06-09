@@ -1,0 +1,86 @@
+*{
+    
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+   
+    font-family: 'Poppins', sans-serif;
+
+}
+/*menu*/
+.header{
+    background: #CE9678;
+    height: 100px;
+}
+.menu{
+
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 800;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover {
+    color: #CE9678;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+cursor: pointer;
+display: none;
+}
+/*contato*/
+.contactoo{
+    background: #FFFDFC;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+a{
+    text-align: center;
+    color: rgb(165, 144, 97);
+    display: block;
+    margin-bottom: 15px;
+}
+.l1{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(165, 144, 97);
+    display: block;
+    margin-bottom: 20px;
+}

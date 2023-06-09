@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 ;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*menu*/
+.header{
+    background: #CE9678;
+    height: 100px;
+}
+.menu{
+
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 800;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover {
+    color: #CE9678;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+cursor: pointer;
+display: none;
+}
+/*catalogo*/
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+img{
+    max-width: 100%;
+
+}
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+.item{
+    border-radius: 10px;
+   
+}
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+.info-produt{
+    padding: 15px 30px;
+
+}
+.item img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover ;
+    border-radius: 10px 10px 0 0;
+    transition: all .3s;
+}
+.item:hover img{
+    border-radius: 10px 10px 10px 10px;
+transform: scale(1.2);
+}
+.info-produt{
+    padding: 15px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+p{
+font-size: 15px;
+font-weight: 900;
+}
+
+.info-produt button{
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    background-color: #CE9678;
+    color: black;
+    padding: 15px 100px;
+    cursor: pointer;
+
+}
+.info-produt:hover button{
+background-color: blue;
+font-size: 20px;
+font-weight: 900;
+}
+.info-produt h2{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.oculto {
+    font-size: .1px;
+    color: #fff;
+}
+.oculto:hover {
+display: grid;
+color: black;
+font-size: 20px;
+flex-direction: column;
+text-align: center;
+background: #fff;
+border-radius: 10px;
+
+
+}
+.oculto:hover p{
+font-size: 20px;
+padding: 15px 10px;
+
+}
+

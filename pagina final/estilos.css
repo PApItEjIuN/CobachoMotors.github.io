@@ -1,0 +1,143 @@
+:root {
+    --colorTextos: #49454567;
+}
+
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background: #353b50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1a121a, #151820);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #170b36, #081c25);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+}
+
+form{
+    background: #f6fffd;
+    padding: 40px 70px;
+    box-shadow: 0 0 6px 0 rgba(92, 82, 82, 0.8);
+    border-radius: 10px;
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px ;
+}
+
+input{
+    background: none;
+    color: #dfc5c5;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+
+
+input:focus{ 
+    outline: none;
+    color: #5e5d5d;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 20px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 20px;
+    color: #083b44;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #0e2729, #002b38);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #251d30;
+    padding-top: 20px;
+}
+
+button{
+    font-family: 'roboto';
+    background: #000c35;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c554f, #282e42);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #123130, #061924);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.browser-default{
+    padding: 2px;
+    margin: 50px;
+    width:180px;
+}
+@media screen and (max-width:500px){
+    form{
+        width: 80%;
+    }
+}
+
